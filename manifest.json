@@ -1,0 +1,31 @@
+{
+  "name": "WePatch",
+  "version": "2.1.4",
+  "manifest_version": 2,
+  "description": "ユーザが使いづらいと感じるUIを改善可能なシステム",
+  "icons": {
+    "16": "icons/icon_16.png",
+    "48": "icons/icon_64.png",
+    "128": "icons/icon_128.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/icon_64.png",
+    "default_title": "WePatch"
+  },
+  "background": {
+    "scripts": ["js/chrombrwoser.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "js": ["js/jquery-2.1.4.min.js","js/BADUIsupporter.js","js/TweenMax.min.js","js/ajax.js","js/buttons.js","js/designString.js","js/html2canvas_tajima.js","js/preg_quote.js","js/jquery.balloon.min.js","js/tipster.js","js/balloon.js","js/tepura.js","js/correction.js","js/convert.js","js/example.js"],
+      "css": ["style/buttons.css","style/supportButton_style.css","style/tepura_style.css","style/convert_style.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": [
+       "storage",
+       "http://*/*",
+       "https://*/*"
+    ]
+}
