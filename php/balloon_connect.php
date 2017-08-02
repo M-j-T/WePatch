@@ -1,9 +1,9 @@
 <?php
 	header('Content-type: text/html; charset=UTF-8');
 
-	$dsn = 'mysql:host=localhost;unix_socket=/tmp/mysql.sock;dbname=BADUI_tajima_db;charset=utf8';
-	$username = 'nakamura-lab';
-	$password = 'n1k2m3r4fms';
+	$dsn = 'mysql:host=localhost;unix_socket=/tmp/mysql.sock;dbname=XXXXXXX;charset=utf8';
+	$username = 'XXXXXXX';
+	$password = 'XXXXXXX';
     $options=array(
         PDO::MYSQL_ATTR_INIT_COMMAND=>'SET NAMES utf8'
     );
